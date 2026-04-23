@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>درگاه ملی مدیریت زخم</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>درگاه ملی مدیریت و پیشگیری از زخم</h2>
+</header>
+
+<div class="grid">
+
+  <div class="card" onclick="openModal('about')">ℹ️<br>درباره ما</div>
+  <div class="card" onclick="openModal('contact')">📞<br>تماس با ما</div>
+  <div class="card" onclick="openModal('uploadWound')">📷<br>بارگذاری عکس زخم</div>
+  <div class="card" onclick="openModal('homeCare')">🏠<br>درخواست مدیریت و درمان زخم در منزل</div>
+  <div class="card" onclick="openModal('therapist')">🩺<br>ثبت درمانگر زخم</div>
+  <div class="card" onclick="openModal('clinic')">🏥<br>ثبت کلینیک زخم</div>
+  <div class="card" onclick="openModal('diabetic')">🦶<br>غربالگری پای دیابتی</div>
+  <div class="card" onclick="openModal('consult')">💬<br>مشاوره و آموزش</div>
+  <div class="card" onclick="openModal('equipment')">📦<br>ارسال تجهیزات</div>
+
+</div>
+
+<!-- MODALS -->
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()" class="close">✖</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
